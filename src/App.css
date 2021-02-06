@@ -18,3 +18,18 @@ body{
   color: white;
 
 }
+#to-do-form input::placeholder{
+  color: white;
+}
+#to-do-form input::-moz-focus-inner{
+  outline: none;
+}
+#to-do-form button{
+  height: 50px;
+  width: 80px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bolder;
+  color:white;
+}
