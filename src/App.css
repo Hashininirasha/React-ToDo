@@ -2,7 +2,7 @@ body{
   background-image: url("images/back1.jpg");
 }
 .App{
-  background-color: darkslategrey;
+  background-color: #07AAA3;
   min-height: 500px;
   width: 400px;
   margin: 40px auto;
