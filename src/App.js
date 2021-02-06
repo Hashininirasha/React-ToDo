@@ -14,6 +14,7 @@ class App extends React.Component{
       
     }
     this.handleInput=this.handleInput.bind(this);
+    this.addItem=this.addItem.bind(this);
   }
   handleInput(e){
     this.setState({
@@ -27,6 +28,10 @@ class App extends React.Component{
     e.preventDefault();
     const newItem = this.state.currentItem;
     console.log(newItem);
+    if(newItem.text!==""){
+      const newItem=[..this.state.items, newItem];
+      this.setState
+    }
   }
   render(){
     return(
