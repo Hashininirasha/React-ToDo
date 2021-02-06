@@ -7,12 +7,12 @@ class App extends React.Component{
     return(
       <div className="App">
         <header>
-          <form id="to-do app">
+          <form id="to-do-form">
             <input type="text" placeholder="Enter text"/>
             <button type="button" class="btn btn-warning">Add</button>
           </form>
         </header>
-      </div> 
+        </div>
     );
   }
 }

@@ -7,3 +7,10 @@ body{
   width: 400px;
   margin: 40px auto;
 }
+#to-do-form input{
+  background-color: #A307AA;
+  height: 50px;
+  width: 200px;
+  border: 0;
+
+}
