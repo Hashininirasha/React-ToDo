@@ -20,6 +20,7 @@ class App extends React.Component{
     }
     this.handleInput=this.handleInput.bind(this);
     this.addItem=this.addItem.bind(this);
+    this.deleteItem = this.deleteItem.bind(this);
   }
   handleInput(e){
     this.setState({
@@ -43,6 +44,29 @@ class App extends React.Component{
         }
       })
     }
+  }
+  deleteItem(key){
+    const filteredItems= this.state.items.filter(item =>
+      item.key!==key);
+    this.setState({
+      items: filteredItems
+    })
+
+  }
+  setUpdate(text,key){
+    console.log("items:"+this.state.items);
+    const items = this.state.items;
+    items.map(item=>{      
+      if(item.key===key){
+        console.log(item.key +"    "+key)
+        item.text= text;
+      }
+    })
+    this.setState({
+      items: items
+    })
+    
+   
   }
   render(){
     return(
