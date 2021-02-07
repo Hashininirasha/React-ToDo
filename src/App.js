@@ -21,6 +21,7 @@ class App extends React.Component{
     this.handleInput=this.handleInput.bind(this);
     this.addItem=this.addItem.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
+    this.setUpdate=this.setUpdate.bind(this);
   }
   handleInput(e){
     this.setState({
@@ -78,13 +79,14 @@ class App extends React.Component{
             value={this.state.currentItem.text}
             onChange={this.handleInput}
             />
-            <button type="button" class="btn btn-warning">Add</button>
+            <button type="submit">Add</button>
           </form>
-        </header>
+          <p>{this.state.items.text}</p>
         <Listitem items={this.state.items}
-        deleteItem ={this.deleteItem}>
+        deleteItem ={this.deleteItem}
         setUpdate={this.setUpdate}
-        </Listitem>
+        />
+        </header>
         </div>
     );
   }
