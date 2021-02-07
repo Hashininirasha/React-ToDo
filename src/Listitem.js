@@ -3,14 +3,14 @@ import './Listitem.css'
 
 function Listitem(props){
     const items = props.items;
-    const Listitem = items.map(items =>
+    const listitem = items.map((item) =>
         {
-            return <div className="list" key="item.key">
-                <p>{items.text}</p>
+            return <div className="list" key={item.key}>
+                <p>{item.text}</p>
             </div>
-        })
+        });
     return(
-        <div>{Listitem}</div>
+        <div>{listitem}</div>
     )
 }
 
