@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Listitem from './Listitem';
 
 class App extends React.Component{
   constructor(props){
@@ -29,8 +30,14 @@ class App extends React.Component{
     const newItem = this.state.currentItem;
     console.log(newItem);
     if(newItem.text!==""){
-      const newItem=[..this.state.items, newItem];
-      this.setState
+      const newItem=[...this.state.items, newItem];
+      this.setState({
+        items:newItem,
+        currentItem:{
+          text:"",
+          key:''
+        }
+      })
     }
   }
   render(){
@@ -45,6 +52,7 @@ class App extends React.Component{
             <button type="button" class="btn btn-warning">Add</button>
           </form>
         </header>
+        <Listitem></Listitem>
         </div>
     );
   }
