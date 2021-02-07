@@ -68,6 +68,7 @@ class App extends React.Component{
     
    
   }
+  
   render(){
     return(
       <div className="App">
@@ -81,7 +82,9 @@ class App extends React.Component{
           </form>
         </header>
         <Listitem items={this.state.items}
-        deleteItem ={this.deleteItem}></Listitem>
+        deleteItem ={this.deleteItem}>
+        setUpdate={this.setUpdate}
+        </Listitem>
         </div>
     );
   }
