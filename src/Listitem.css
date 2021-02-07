@@ -7,3 +7,11 @@
     border-radius: 5px;
 
 }
+.list p{
+    padding: 10px;
+    position: relative;
+}
+.list p span{
+    position:absolute;
+
+}
