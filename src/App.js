@@ -56,7 +56,8 @@ class App extends React.Component{
             <button type="button" class="btn btn-warning">Add</button>
           </form>
         </header>
-        <Listitem items={this.state.items}></Listitem>
+        <Listitem items={this.state.items}
+        deleteItem ={this.deleteItem}></Listitem>
         </div>
     );
   }

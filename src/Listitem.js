@@ -11,7 +11,9 @@ function Listitem(props){
                 <p>{item.text}
                 <span>
        
-                <FontAwesomeIcon className="faicons" icon="trash"/>
+                <FontAwesomeIcon className="faicons" icon="trash" onClick={() => deleteItem(item.key)}
+                    
+                    />
                 </span>
                 </p>
             </div>
