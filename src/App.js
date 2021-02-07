@@ -52,7 +52,7 @@ class App extends React.Component{
             <button type="button" class="btn btn-warning">Add</button>
           </form>
         </header>
-        <Listitem></Listitem>
+        <Listitem items={this.state.items}></Listitem>
         </div>
     );
   }
