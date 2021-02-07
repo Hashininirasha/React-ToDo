@@ -13,5 +13,7 @@
 }
 .list p span{
     position:absolute;
+    right: 10px;
+    cursor: pointer;
 
 }
